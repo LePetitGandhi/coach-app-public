@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "coach-aimen",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./out",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "coach-aimen-db",
+      "database_id": "895b1bbc-959b-4839-8020-7fd5452d5492",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "routes": [
+    {
+      "pattern": "coach.aimenznaidi.party",
+      "custom_domain": true
+    }
+  ],
+  "workers_dev": true,
+  "observability": {
+    "enabled": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "coach-app",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node ./node_modules/next/dist/bin/next dev --webpack -p 3210",
+    "build": "node ./node_modules/next/dist/bin/next build --webpack",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "cf:deploy": "bash scripts/deploy-cloudflare.sh",
+    "cf:dev": "npm run build && npx --yes wrangler@4.141.0 dev"
+  },
+  "dependencies": {
+    "lucide-react": "^1.16.0",
+    "next": "16.2.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "typescript": "^5",
+    "vitest": "^4.1.6"
+  }
+}

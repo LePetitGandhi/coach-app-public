@@ -1,0 +1,25 @@
+{
+  "name": "Coach Aïmen",
+  "short_name": "Coach",
+  "description": "Cockpit quotidien musculation, nutrition et discipline — recomposition corporelle.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4f0e7",
+  "theme_color": "#f4f0e7",
+  "orientation": "portrait",
+  "lang": "fr",
+  "categories": ["health", "fitness", "lifestyle"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "Séance du jour", "short_name": "Séance", "url": "/?tab=today" },
+    { "name": "Bibliothèque d'exercices", "short_name": "Exos", "url": "/?tab=exercises" },
+    { "name": "Repas et courses", "short_name": "Repas", "url": "/?tab=nutrition" }
+  ]
+}
